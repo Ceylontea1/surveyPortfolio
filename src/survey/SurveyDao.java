@@ -1,5 +1,9 @@
 package survey;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
+
 public class SurveyDao {
 	private static SurveyDao instance = null;
 	
@@ -12,5 +16,9 @@ public class SurveyDao {
 			}
 		}
 		return instance;
+	}
+	
+	public static void insertMainData() {
+
 	}
 }

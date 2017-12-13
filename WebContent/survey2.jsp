@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id = "survey" class = "survey.SurveyDto" scope = "session">
+	<jsp:setProperty name = "survey" property = "*" />
+</jsp:useBean>    
+
 <!DOCTYPE html>
 <html>
 
@@ -8,9 +12,10 @@
 <title>흡연실태 설문지</title>
 
 <link href = "css/style.css?ver=0" rel = "stylesheet">
+<script src = "JavaScript/script.js"></script>
 
 </head>
-<form action = "#" method = "post" name = "survey2">
+<form action = "result.jsp" method = "post" name = "survey2">
 	<table>
 		<tr>
 			<td colspan = "5" class = "question">
@@ -285,8 +290,16 @@
 				오래 살기 위해
 			</td>
 		</tr>
+<!-- 		 <tr>
+			<td colspan = "4" class = "question" align = "right">
+				<button onclick = "history.back()">이전</button>
+				<button onclick = "survey1Submit()">다음</button>
+			</td>
+		</tr>  -->
 	</table>
-</form>
+</form>	
+				<button onclick = "history.back()">이전</button>
+				<button onclick = "survey2Submit()">다음</button>
 <body>
 
 </body>

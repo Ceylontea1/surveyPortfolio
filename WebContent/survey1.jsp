@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id = "survey" class = "survey.SurveyDto" scope = "session">
+	<jsp:setProperty name = "survey" property = "*" />
+</jsp:useBean>    
+    
 <!DOCTYPE html>
 <html>
 
@@ -8,9 +12,10 @@
 <title>흡연실태 설문지</title>
 
 <link href = "css/style.css?ver=0" rel = "stylesheet">
+<script src = "JavaScript/script.js"></script>
 
 </head>
-<form action = "#" method = "post" name = "survey1">
+	<form action = "survey2.jsp" method = "post" name = "survey1">
 	<table>
 		<tr>
 			<td colspan = "5" class = "question">
@@ -37,11 +42,19 @@
 			</td>
 		</tr>
 		<tr>
-			<th colspan = "5" class = "question"><font color = "red">
-				※ 아래 사항부터는 담배를 피워본 경험이 있거나, 현재도 가끔 피우시는 분만 응답해주세요. 
-			</font></th>
+			<th colspan = "5" class = "question">
+				<font color = "red">
+					※ 아래 사항부터는 담배를 피워본 경험이 있거나, 현재도 가끔 피우시는 분만 응답해주세요.
+				</font>
+			</th>
 		</tr>
-		
+		<tr>
+			<td colspan = "5" align = "right">
+				<a href = "result.jsp">
+					해당사항이 없으신 분은 결과창으로 바로 이동하고 설문을 종료합니다. [이동]
+				</a>
+			</td>
+		</tr>
 		<tr>
 			<td colspan = "5" class = "question">
 				2. 처음 담배를 피워본 때는 언제입니까?
@@ -254,8 +267,16 @@
 				<input type = "checkbox" name = "Q11" value = "8"> 살 빼기 위해서
 			</td>
 		</tr>
+<!--  		<tr>
+			<td colspan = "4" class = "question" align = "right">
+				<button onclick = "history.back()">이전</button>
+				<button onclick = "survey1Submit()">다음</button>
+			</td>
+		</tr>  -->
 	</table>
-</form>
+	</form>
+					<button onclick = "history.back()">이전</button>
+				<button onclick = "survey1Submit()">다음</button>
 <body>
 
 </body>

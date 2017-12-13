@@ -8,12 +8,13 @@
 <title>흡연실태 설문지</title>
 
 <link href = "css/style.css?ver=0" rel = "stylesheet">
+<script src = "JavaScript/script.js"></script>
 
 </head>
 
 <body>
 <h1 align = "center">흡연실태 설문지</h1><p><br>
-<form action = "#" method = "post" name = "main">
+<form action = "survey1.jsp" method = "post" name = "main">
 	<table class = "main">
 		<tr>
 			<td colspan = "2">
@@ -63,7 +64,7 @@
 		</tr>
 		<tr>
 			<td align = "right" colspan = "2">
-				<a href = "#"><input type = "submit" value = "다음"></a>
+				<input type = "submit" value = "다음">
 			</td>
 		</tr>
 	</table>
