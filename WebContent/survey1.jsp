@@ -11,7 +11,7 @@
 
 </head>
 <form action = "#" method = "post">
-	<table width = "70%">
+	<table width = "80%">
 		<tr>
 			<td colspan = "4">
 				1. 다음 중 귀하의 상태를 잘 나타내는 것은?
@@ -214,6 +214,75 @@
 		<tr>
 			<td colspan = "4">
 				<textarea name = "10" rows = "3" cols = "50"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				11. 담배를 계속 피우는 이유는 무엇입니까?
+			</td>
+		</tr>
+		<tr>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "1"> 피우는 것이 즐겁다.
+			</td>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "2"> 기분이 좋아진다.
+			</td>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "3"> 화날 때 마음을 가라앉히려고
+			</td>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "4"> 긴장이 풀린다.
+			</td>
+		</tr>
+		<tr>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "5"> 특별한 이유 없이 버릇처럼
+			</td>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "6"> 집중이 잘 된다.
+			</td>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "7"> 친구와 어울리려고
+			</td>
+			<td class = "answer">
+				<input type = "checkbox" name = "11" value = "8"> 살 빼기 위해서
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan = "4">
+				12. 귀하의 금연에 대한 생각을 가장 잘 나타낸 것은?
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<input type = "checkbox" name = "12" value = "1"> 나는 담배를 피우지 않는다.
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<input type = "checkbox" name = "12" value = "2"> 나는 결코 끊으려는 생각을 해본 적이 없다.
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<input type = "checkbox" name = "12" value = "3"> 나는 당장 담배를 끊을 작정이다.
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<input type = "checkbox" name = "12" value = "4"> 나는 담배를 끊을 작정이지만, 지금은 아니다.
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<input type = "checkbox" name = "12" value = "5"> 나는 담배를 끊었고, 다시 피우지 않기 위해 노력하고 있다.
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<input type = "checkbox" name = "12" value = "6"> 나는 담배를 끊고싶지 않다.
 			</td>
 		</tr>
 	</table>
