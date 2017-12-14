@@ -3,6 +3,8 @@
 <%@ page import = "java.net.URLEncoder" %>
 
 <%
+	request.setCharacterEncoding("utf-8");
+
 	session.setAttribute("Q1", request.getParameter("Q1"));
 	session.setAttribute("Q2", request.getParameter("Q2"));
 	session.setAttribute("Q2_STARTAGE", request.getParameter("Q2_STARTAGE"));

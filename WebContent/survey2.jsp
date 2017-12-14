@@ -16,11 +16,7 @@
 </head>
 
 <body>
-<%
-	out.print(session.getAttribute("GENDER"));
-	out.print(session.getAttribute("Q1"));
-	out.print(session.getAttribute("Q12"));
-%>
+
 <form action = "result_survey2.jsp" method = "post" name = "survey2">
 	<table>
 		<tr>
