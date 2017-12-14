@@ -2,6 +2,7 @@ package survey;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
@@ -55,7 +56,7 @@ public class SurveyDao {
  */
 	
 	public void insertMainData(SurveyDto survey) {
-		String sql = "insert into SURVEY value("
+		String sql = "insert into SURVEY values("
 				+ "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
 				+ "?, ?, ?, ?, ?, ?, ?, ? ,? ,?, "
 				+ "?, ?, ?, ?, ?, ?, ?, ? ,? ,?, "
@@ -64,19 +65,21 @@ public class SurveyDao {
 		try {
 			Connection con = ConUtil.getConnection();
 			PreparedStatement pstmt = con.prepareStatement(sql);
+			ResultSet rs;
+			
 			pstmt.setString(1, survey.getGENDER());
-			pstmt.setInt(2, survey.getAGE());
+			pstmt.setString(2, survey.getAGE());
 			pstmt.setString(3, survey.getJOB());
 			
 			pstmt.setString(4, survey.getQ1());
 			pstmt.setString(5, survey.getQ2());
-			pstmt.setInt(6, survey.getQ2_STARTAGE());
+			pstmt.setString(6, survey.getQ2_STARTAGE());
 			pstmt.setString(7, survey.getQ3());
 			pstmt.setString(8, survey.getQ3_ETC());
 			pstmt.setString(9, survey.getQ4());
-			pstmt.setInt(10, survey.getQ4_1_1());
-			pstmt.setInt(11, survey.getQ4_1_2());
-			pstmt.setInt(12, survey.getQ4_2_1());
+			pstmt.setString(10, survey.getQ4_1_1());
+			pstmt.setString(11, survey.getQ4_1_2());
+			pstmt.setString(12, survey.getQ4_2_1());
 			pstmt.setString(13, survey.getQ5());
 			pstmt.setString(14, survey.getQ6());
 			pstmt.setString(15, survey.getQ7());
@@ -92,12 +95,14 @@ public class SurveyDao {
 			pstmt.setString(25, survey.getQ15());
 			pstmt.setString(26, survey.getQ15_ETC());
 			pstmt.setString(27, survey.getQ16());
-			pstmt.setInt(28, survey.getQ16_1_1());
+			pstmt.setString(28, survey.getQ16_1_1());
 			pstmt.setString(29, survey.getQ17());
 			pstmt.setString(30, survey.getQ18());
 			pstmt.setString(31, survey.getQ19());
 			pstmt.setString(32, survey.getQ20());
 			
+			rs = pstmt.executeQuery();
+			System.out.println(rs);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

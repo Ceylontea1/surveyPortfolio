@@ -6,18 +6,18 @@
       
 <%
 	survey.setGENDER((String)session.getAttribute("GENDER"));
-	survey.setAGE((Integer)session.getAttribute("AGE"));
+	survey.setAGE((String)session.getAttribute("AGE"));
 	survey.setJOB((String)session.getAttribute("JOB"));
 	
 	survey.setQ1((String)session.getAttribute("Q1"));
 	survey.setQ2((String)session.getAttribute("Q2"));
-	survey.setQ2_STARTAGE((Integer)session.getAttribute("Q2_STARTAGE"));
+	survey.setQ2_STARTAGE((String)session.getAttribute("Q2_STARTAGE"));
 	survey.setQ3((String)session.getAttribute("Q3"));
 	survey.setQ3_ETC((String)session.getAttribute("setQ3_ETC"));
 	survey.setQ4((String)session.getAttribute("Q4"));
-	survey.setQ4_1_1((Integer)session.getAttribute("setQ4_1_1"));
-	survey.setQ4_1_2((Integer)session.getAttribute("setQ4_1_2"));
-	survey.setQ4_2_1((Integer)session.getAttribute("setQ4_2_1"));
+	survey.setQ4_1_1((String)session.getAttribute("setQ4_1_1"));
+	survey.setQ4_1_2((String)session.getAttribute("setQ4_1_2"));
+	survey.setQ4_2_1((String)session.getAttribute("setQ4_2_1"));
 	survey.setQ5((String)session.getAttribute("Q5"));
 	survey.setQ6((String)session.getAttribute("Q6"));
 	survey.setQ7((String)session.getAttribute("Q7"));
@@ -33,7 +33,7 @@
 	survey.setQ15((String)session.getAttribute("Q15"));
 	survey.setQ15_ETC((String)session.getAttribute("Q15_ETC"));
 	survey.setQ16((String)session.getAttribute("Q16"));
-	survey.setQ16_1_1((Integer)session.getAttribute("Q16_1_1"));
+	survey.setQ16_1_1((String)session.getAttribute("Q16_1_1"));
 	survey.setQ17((String)session.getAttribute("Q17"));
 	survey.setQ18((String)session.getAttribute("Q18"));
 	survey.setQ19((String)session.getAttribute("Q19"));
@@ -52,7 +52,7 @@
 <title>흡연실태 설문 결과</title>
 </head>
 <body>
-1 	<%=session.getAttribute("GENDER")%><br>
+<%-- 1 	<%=session.getAttribute("GENDER")%><br>
 2 	<%=session.getAttribute("AGE")%><br>
 3 	<%=session.getAttribute("JOB")%><br>
 <br>	
@@ -84,6 +84,6 @@
 29 	<%=session.getAttribute("Q17")%><br>
 30 	<%=session.getAttribute("Q18")%><br>
 31 	<%=session.getAttribute("Q19")%><br>
-32	<%=session.getAttribute("Q20")%><br>
+32	<%=session.getAttribute("Q20")%><br> --%>
 </body>
 </html>

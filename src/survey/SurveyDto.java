@@ -3,18 +3,18 @@ package survey;
 public class SurveyDto {
 private static SurveyDto instance = null;
 	private String GENDER;
-	private int AGE;
+	private String AGE;
 	private String JOB;
 	
 	private String Q1;
 	private String Q2;
-	private int Q2_STARTAGE;// 처음 시작한 나이
+	private String Q2_STARTAGE;// 처음 시작한 나이
 	private String Q3;		// 3-9 처음 시작한 이유?
 	private String Q3_ETC;	// 	처음 시작한 이유?
 	private String Q4;
-	private int Q4_1_1;		// 한 주에 몇 개피?
-	private int Q4_1_2;		// 한 달에 몇 개피?
-	private int Q4_2_1;		// 매일 하루에 몇 개피?
+	private String Q4_1_1;		// 한 주에 몇 개피?
+	private String Q4_1_2;		// 한 달에 몇 개피?
+	private String Q4_2_1;		// 매일 하루에 몇 개피?
 	private String Q5;
 	private String Q6;
 	private String Q7;
@@ -30,7 +30,7 @@ private static SurveyDto instance = null;
 	private String Q15;
 	private String Q15_ETC;	// 15-5금연 실패 이유
 	private String Q16;		// 16-5 친구
-	private int Q16_1_1;	// 	몇 명?
+	private String Q16_1_1;	// 	몇 명?
 	private String Q17;
 	private String Q18;
 	private String Q19;
@@ -42,10 +42,10 @@ private static SurveyDto instance = null;
 	public void setGENDER(String gENDER) {
 		GENDER = gENDER;
 	}
-	public int getAGE() {
+	public String getAGE() {
 		return AGE;
 	}
-	public void setAGE(int aGE) {
+	public void setAGE(String aGE) {
 		AGE = aGE;
 	}
 	public String getJOB() {
@@ -66,10 +66,10 @@ private static SurveyDto instance = null;
 	public void setQ2(String q2) {
 		Q2 = q2;
 	}
-	public int getQ2_STARTAGE() {
+	public String getQ2_STARTAGE() {
 		return Q2_STARTAGE;
 	}
-	public void setQ2_STARTAGE(int q2_STARTAGE) {
+	public void setQ2_STARTAGE(String q2_STARTAGE) {
 		Q2_STARTAGE = q2_STARTAGE;
 	}
 	public String getQ3() {
@@ -90,22 +90,22 @@ private static SurveyDto instance = null;
 	public void setQ4(String q4) {
 		Q4 = q4;
 	}
-	public int getQ4_1_1() {
+	public String getQ4_1_1() {
 		return Q4_1_1;
 	}
-	public void setQ4_1_1(int q4_1_1) {
+	public void setQ4_1_1(String q4_1_1) {
 		Q4_1_1 = q4_1_1;
 	}
-	public int getQ4_1_2() {
+	public String getQ4_1_2() {
 		return Q4_1_2;
 	}
-	public void setQ4_1_2(int q4_1_2) {
+	public void setQ4_1_2(String q4_1_2) {
 		Q4_1_2 = q4_1_2;
 	}
-	public int getQ4_2_1() {
+	public String getQ4_2_1() {
 		return Q4_2_1;
 	}
-	public void setQ4_2_1(int q4_2_1) {
+	public void setQ4_2_1(String q4_2_1) {
 		Q4_2_1 = q4_2_1;
 	}
 	public String getQ5() {
@@ -198,10 +198,10 @@ private static SurveyDto instance = null;
 	public void setQ16(String q16) {
 		Q16 = q16;
 	}
-	public int getQ16_1_1() {
+	public String getQ16_1_1() {
 		return Q16_1_1;
 	}
-	public void setQ16_1_1(int q16_1_1) {
+	public void setQ16_1_1(String q16_1_1) {
 		Q16_1_1 = q16_1_1;
 	}
 	public String getQ17() {
