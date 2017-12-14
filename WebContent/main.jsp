@@ -15,7 +15,7 @@
 
 <body>
 <h1 align = "center">흡연실태 설문지</h1><p><br>
-<form action = "main_result.jsp" method = "post" name = "main">
+<form action = "result_main.jsp" method = "post" name = "main">
 	<table class = "main">
 		<tr>
 			<td colspan = "2">

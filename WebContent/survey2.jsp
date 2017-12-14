@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<jsp:useBean id = "survey" class = "survey.SurveyDto" scope = "session" />
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +14,13 @@
 <script src = "JavaScript/script.js"></script>
 
 </head>
-<form action = "survey2_result.jsp" method = "post" name = "survey2">
+
+<body>
+<%= survey.getGENDER() %>
+<%= survey.getQ1() %>
+<%= survey.getQ12() %>
+
+<form action = "result_survey2.jsp" method = "post" name = "survey2">
 	<table>
 		<tr>
 			<td colspan = "5" class = "question">
@@ -297,7 +305,6 @@
 </form>	
 				<button onclick = "history.back()">이전</button>
 				<button onclick = "survey2Submit()">다음</button>
-<body>
 
 </body>
 
