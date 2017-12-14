@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<jsp:useBean id = "survey" class = "survey.SurveyDto" scope = "session">
-	<jsp:setProperty name = "survey" property = "*" />
-</jsp:useBean>    
+    pageEncoding="UTF-8"%> 
     
 <!DOCTYPE html>
 <html>
@@ -15,7 +12,7 @@
 <script src = "JavaScript/script.js"></script>
 
 </head>
-	<form action = "survey2.jsp" method = "post" name = "survey1">
+	<form action = "survey1_result.jsp" method = "post" name = "survey1">
 	<table>
 		<tr>
 			<td colspan = "5" class = "question">
@@ -51,7 +48,7 @@
 		<tr>
 			<td colspan = "5" align = "right">
 				<a href = "result.jsp">
-					해당사항이 없으신 분은 결과창으로 바로 이동하고 설문을 종료합니다. [이동]
+					해당사항이 없으신 분은 결과창으로 바로 이동하고 설문을 종료합니다.(1번일 경우) [이동]
 				</a>
 			</td>
 		</tr>

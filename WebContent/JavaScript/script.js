@@ -15,7 +15,7 @@ function mainSubmit(){
 }
 
 function survey1Submit(){
-	var Qnum = 2;
+	var Qnum = 1;
 	var Q;
 	var check;
 	var size;
@@ -28,21 +28,30 @@ function survey1Submit(){
 		question = document.getElementsByName(Q)
 		size = question.length;
 		
-		if(Qnum == 10){
-			if(document.survey1.Q10.value != ""){
-				check = true;
-				continue;
+		if(Qnum == 1){
+			if(document.survey1.Q1.value != ""){
+				if(document.survey1.Q1.value == "1"){
+					document.survey1.submit();
+				}
 			}
 		}
-		
-		for(var i = 0; i < size; i++){
-			if(question[i].checked == true){
-				check = true;
+		else{
+			if(Qnum == 10){
+				if(document.survey1.Q10.value != ""){
+					check = true;
+					continue;
+				}
 			}
-		}
-		if(check == false){
-			alert(Qnum + "번 문항에 답해주세요.");
-			break;
+			
+			for(var i = 0; i < size; i++){
+				if(question[i].checked == true){
+					check = true;
+				}
+			}
+			if(check == false){
+				alert(Qnum + "번 문항에 답해주세요.");
+				break;
+			}
 		}
 	}
 	
@@ -64,6 +73,10 @@ function survey2Submit(){
 		Q = "Q" + Qnum;
 		question = document.getElementsByName(Q)
 		size = question.length;
+		
+		if(Qnum == 15){
+			continue;
+		}
 		
 		for(var i = 0; i < size; i++){
 			if(question[i].checked == true){

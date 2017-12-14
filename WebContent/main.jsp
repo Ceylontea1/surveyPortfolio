@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%> 
+    
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +15,7 @@
 
 <body>
 <h1 align = "center">흡연실태 설문지</h1><p><br>
-<form action = "survey1.jsp" method = "post" name = "main">
+<form action = "main_result.jsp" method = "post" name = "main">
 	<table class = "main">
 		<tr>
 			<td colspan = "2">

@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:useBean id = "survey" class = "survey.SurveyDto" scope = "session">
-	<jsp:setProperty name = "survey" property = "*" />
-</jsp:useBean>    
 
 <!DOCTYPE html>
 <html>
@@ -15,7 +12,7 @@
 <script src = "JavaScript/script.js"></script>
 
 </head>
-<form action = "result.jsp" method = "post" name = "survey2">
+<form action = "survey2_result.jsp" method = "post" name = "survey2">
 	<table>
 		<tr>
 			<td colspan = "5" class = "question">
@@ -24,32 +21,32 @@
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q12" value = "1"> 나는 담배를 피우지 않는다.
+				<input type = "radio" name = "Q12" value = "1"> 나는 담배를 피우지 않는다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q12" value = "2"> 나는 결코 끊으려는 생각을 해본 적이 없다.
+				<input type = "radio" name = "Q12" value = "2"> 나는 결코 끊으려는 생각을 해본 적이 없다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q12" value = "3"> 나는 당장 담배를 끊을 작정이다.
+				<input type = "radio" name = "Q12" value = "3"> 나는 당장 담배를 끊을 작정이다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q12" value = "4"> 나는 담배를 끊을 작정이지만, 지금은 아니다.
+				<input type = "radio" name = "Q12" value = "4"> 나는 담배를 끊을 작정이지만, 지금은 아니다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q12" value = "5"> 나는 담배를 끊었고, 다시 피우지 않기 위해 노력하고 있다.
+				<input type = "radio" name = "Q12" value = "5"> 나는 담배를 끊었고, 다시 피우지 않기 위해 노력하고 있다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q12" value = "6"> 나는 담배를 끊고싶지 않다.
+				<input type = "radio" name = "Q12" value = "6"> 나는 담배를 끊고싶지 않다.
 			</td>
 		</tr>
 		
@@ -105,21 +102,21 @@
 		</tr>
 		<tr>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q15" value = "1"> 본인의 의지가 약해서
+				<input type = "radio" name = "Q15" value = "1"> 본인의 의지가 약해서
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q15" value = "2"> 금단증상이 심해서
+				<input type = "radio" name = "Q15" value = "2"> 금단증상이 심해서
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q15" value = "3"> 친구나 주위의 유혹에 의해서
+				<input type = "radio" name = "Q15" value = "3"> 친구나 주위의 유혹에 의해서
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q15" value = "4"> 스트레스가 많아서
+				<input type = "radio" name = "Q15" value = "4"> 스트레스가 많아서
 			</td>
 		</tr>
 		<tr>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q15" value = "5"> 기타
+				<input type = "radio" name = "Q15" value = "5"> 기타
 			</td>
 		</tr>
 		<tr>
@@ -162,21 +159,21 @@
 		</tr>
 		<tr>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q17" value = "1"> 전혀 없다.
+				<input type = "radio" name = "Q17" value = "1"> 전혀 없다.
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q17" value = "2"> 없는 편이다.
+				<input type = "radio" name = "Q17" value = "2"> 없는 편이다.
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q17" value = "3"> 잘 모르겠다.
+				<input type = "radio" name = "Q17" value = "3"> 잘 모르겠다.
 			</td>
 		</tr>
 		<tr>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q17" value = "4"> 약간 있다.
+				<input type = "radio" name = "Q17" value = "4"> 약간 있다.
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q17" value = "5"> 꼭 성공한다.
+				<input type = "radio" name = "Q17" value = "5"> 꼭 성공한다.
 			</td>
 		</tr>
 		
@@ -187,17 +184,17 @@
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q18" value = "1"> 피우고 있을 것이다.
+				<input type = "radio" name = "Q18" value = "1"> 피우고 있을 것이다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q18" value = "2"> 피울 지도 모르겠다.
+				<input type = "radio" name = "Q18" value = "2"> 피울 지도 모르겠다.
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "5">
-				<input type = "checkbox" name = "Q18" value = "3"> 절대로 피우지 않을 것이다.
+				<input type = "radio" name = "Q18" value = "3"> 절대로 피우지 않을 것이다.
 			</td>
 		</tr>
 		
@@ -208,13 +205,13 @@
 		</tr>
 		<tr>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q19" value = "1"> 예
+				<input type = "radio" name = "Q19" value = "1"> 예
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q19" value = "2"> 아마도
+				<input type = "radio" name = "Q19" value = "2"> 아마도
 			</td>
 			<td class = "answer">
-				<input type = "checkbox" name = "Q19" value = "3"> 아니오
+				<input type = "radio" name = "Q19" value = "3"> 아니오
 			</td>
 		</tr>
 		
