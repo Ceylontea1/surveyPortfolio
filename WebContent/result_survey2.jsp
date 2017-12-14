@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import = "java.net.URLEncoder" %>
     
 <%
 	session.setAttribute("Q12", request.getParameter("Q12"));
@@ -8,7 +9,7 @@
 	session.setAttribute("Q14_1_1", request.getParameter("Q14_1_1"));
 	session.setAttribute("Q14_1_2", request.getParameter("Q14_1_2"));
 	session.setAttribute("Q15", request.getParameter("Q15"));
-	session.setAttribute("Q15_ETC", request.getParameter("Q15_ETC"));
+	session.setAttribute("Q15_ETC", URLEncoder.encode(request.getParameter("Q15_ETC"), "utf-8"));
 	session.setAttribute("Q16", request.getParameter("Q16"));
 	session.setAttribute("Q16_1_1", request.getParameter("Q16_1_1"));
 	session.setAttribute("Q17", request.getParameter("Q17"));
@@ -16,10 +17,6 @@
 	session.setAttribute("Q19", request.getParameter("Q19"));
 	session.setAttribute("Q20", request.getParameter("Q20"));
 %>
-
-<jsp:useBean id = "survey" class = "survey.SurveyDto">
-	<jsp:setProperty name = "survey" property = "*" />
-</jsp:useBean>
 
 <jsp:forward page = "result.jsp" />     
     

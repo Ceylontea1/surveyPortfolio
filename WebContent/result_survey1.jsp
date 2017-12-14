@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import = "java.net.URLEncoder" %>
 
 <%
 	session.setAttribute("Q1", request.getParameter("Q1"));
@@ -16,7 +17,7 @@
 	session.setAttribute("Q7", request.getParameter("Q7"));
 	session.setAttribute("Q8", request.getParameter("Q8"));
 	session.setAttribute("Q9", request.getParameter("Q9"));
-	session.setAttribute("Q10", request.getParameter("Q10"));
+	session.setAttribute("Q10", URLEncoder.encode(request.getParameter("Q10"), "utf-8"));
 	session.setAttribute("Q11", request.getParameter("Q11"));
 %>
 <jsp:forward page = "survey2.jsp" />     
